@@ -9,7 +9,7 @@ class XYCoordinatesUnitTest {
     @Test
     void givenAPoint_whenUsingGetter_thenPointReturnsCoordinatesCorrectly() {
         // Given a point with coordinates (10.0, 20.5)
-        Point point = new Point(10.0, 20.5);
+        PointPojo point = new PointPojo(10.0, 20.5);
 
         // Then its getters should return the correct values
         assertEquals(10.0, point.getX(), "X coordinate should be 10.0");
@@ -18,8 +18,8 @@ class XYCoordinatesUnitTest {
   
     @Test
     void givenTwoPointsWithSameCoordinates_whenComparedForEquality_thenShouldBeEqual() {
-        Point point1 = new Point(5.1, -3.5);
-        Point point2 = new Point(5.1, -3.5);
+        PointPojo point1 = new PointPojo(5.1, -3.5);
+        PointPojo point2 = new PointPojo(5.1, -3.5);
         
         assertEquals(point1, point2, "Points with same coordinates should be equal");
     }
